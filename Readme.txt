@@ -1,2 +1,0 @@
-Solid Chat
-OPenSource Project
