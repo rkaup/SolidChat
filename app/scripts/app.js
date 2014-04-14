@@ -6,17 +6,15 @@ angular.module('solidChatApp', [
   'ngSanitize',
   'ngRoute'
 ])
-  .config(function ($routeProvider) {
+  .config(function ($routeProvider, $locationProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'views/main.html',
+        templateUrl: 'partials/main',
         controller: 'MainCtrl'
-      })
-      .when('/HelloRobin', {
-        templateUrl: 'views/hellorobin.html',
-        controller: 'HellorobinCtrl'
       })
       .otherwise({
         redirectTo: '/'
       });
+      
+    $locationProvider.html5Mode(true);
   });
