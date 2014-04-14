@@ -12,6 +12,10 @@ angular.module('solidChatApp', [
         templateUrl: 'partials/main',
         controller: 'MainCtrl'
       })
+      .when('/register', {
+        templateUrl: 'partials/register',
+        controller: 'RegisterCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });

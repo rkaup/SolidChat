@@ -1,0 +1,10 @@
+<div ng-include="'partials/navbar'"></div>
+<form name="form" ng-submit="register()">
+    <label for="username">Username</label>
+    <input tabindex=1 id="username" name="username" type="text" ng-model="user.username"/>
+    <br/>
+    <label for="password">Password</label>
+    <input tabindex=2 id="password" name="password" type="password" ng-model="user.password"/>
+    <br/>
+    <button type="submit">Sign up!</button>
+</form>
